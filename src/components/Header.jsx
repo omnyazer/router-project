@@ -1,5 +1,6 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router";
+import { Container, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -8,11 +9,11 @@ const Header = () => {
         <Container>
           <Navbar.Toggle aria-controls="menu" />
           <Navbar.Collapse id="menu">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">Accueil</Nav.Link>
-              <Nav.Link as={Link} to="/category/vetements">Vêtements</Nav.Link>
-              <Nav.Link as={Link} to="/category/chaussures">Chaussures</Nav.Link>
-            </Nav>
+            <div className="ms-auto d-flex gap-3">
+              <NavLink to="/" className="nav-link">Accueil</NavLink>
+              <NavLink to="/category/vetements" className="nav-link">Vêtements</NavLink>
+              <NavLink to="/category/chaussures" className="nav-link">Chaussures</NavLink>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
