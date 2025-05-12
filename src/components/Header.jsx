@@ -15,7 +15,6 @@ const Header = () => {
             </span>
           )}
 
-          {/* Menu */}
           <Navbar.Toggle aria-controls="menu" />
           <Navbar.Collapse id="menu">
             <Nav className="ms-auto">
