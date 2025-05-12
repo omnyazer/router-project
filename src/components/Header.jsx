@@ -7,8 +7,8 @@ const Header = () => {
       <Container>
         <Navbar.Toggle aria-controls="menu" />
         <Navbar.Collapse id="menu">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Accueil</Nav.Link>
+        <Nav className="ms-auto">
+        <Nav.Link as={Link} to="/">Accueil</Nav.Link>
             <Nav.Link as={Link} to="/category/vetements">Vêtements</Nav.Link>
             <Nav.Link as={Link} to="/category/chaussures">Chaussures</Nav.Link>
           </Nav>
