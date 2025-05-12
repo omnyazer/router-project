@@ -1,9 +1,9 @@
 import { useParams } from "react-router";
 
 const Category = () => {
-  const { category } = useParams();
+  const { categoryId } = useParams();
 
-  return <h1>Catégorie : {category}</h1>;
+  return <h1>Catégorie : {categoryId}</h1>;
 };
 
 export default Category;
